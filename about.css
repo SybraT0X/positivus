@@ -1,0 +1,66 @@
+/* about.css */
+
+/* -- About Section -- */
+.about-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 20px;
+    text-align: center;
+  }
+  
+  .about-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .about-image img {
+    width: 400px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .about-text {
+    max-width: 60%;
+    text-align: left;
+  }
+  
+  .about-text h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .about-text h3 {
+    font-size: 1.8rem;
+    margin-top: 20px;
+  }
+  
+  .about-text ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .about-text ul li {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+  }
+  
+  /* Mobile Adjustments */
+  @media (max-width: 768px) {
+    .about-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .about-text {
+      width: 100%;
+    }
+  
+    .about-image img {
+      width: 80%;
+      margin-bottom: 20px;
+    }
+  }
+  

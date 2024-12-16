@@ -1,0 +1,128 @@
+/* global.css */
+
+/* -- Reset CSS -- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #fafafa;
+    color: #333;
+    line-height: 1.6;
+    text-align: center; /* Centrage global du texte */
+  }
+  
+  header {
+    background-color: #2c3e50;
+    color: white;
+    padding: 20px 0;
+  }
+  
+  header .logo {
+    font-size: 2rem;
+    font-weight: bold;
+    display: inline-block;
+    margin-left: 20px;
+  }
+  
+  nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  nav ul li {
+    display: inline-block;
+    margin: 0 20px;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 600;
+  }
+  
+  nav ul li a:hover {
+    color: #e74c3c;
+  }
+  
+  footer {
+    background-color: #2c3e50;
+    color: white;
+    padding: 15px 0;
+    margin-top: 30px;
+  }
+  
+  footer p {
+    font-size: 0.9rem;
+  }
+  
+  /* -- Button Styles -- */
+  .cta-btn {
+    background-color: #e74c3c;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 25px;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    display: inline-block;
+    text-decoration: none;
+  }
+  
+  .cta-btn:hover {
+    background-color: #c0392b;
+  }
+  
+  /* -- Image Styling -- */
+  img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    display: block;
+    margin: 0 auto;
+  }
+  
+  /* -- Flexbox Utility -- */
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* -- Mobile Responsive Styles -- */
+  @media (max-width: 768px) {
+    nav ul {
+      text-align: center;
+      margin-top: 20px;
+    }
+  
+    nav ul li {
+      display: block;
+      margin: 10px 0;
+    }
+  
+    .hero {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .hero-graphic {
+      margin-top: 20px;
+    }
+  
+    .about-container, .services-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .service-card {
+      width: 80%;
+      margin-bottom: 30px;
+    }
+  }
+  
